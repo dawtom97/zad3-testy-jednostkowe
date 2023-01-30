@@ -31,10 +31,7 @@ const rootsOfQuadraticEquation = (a, b, c) => {
     root1 = root2 = -b / (2 * a);
 
     console.log(`Pierwiastek równania kwadratowego to ${root1}`);
-    return {
-      root1,
-      root2
-    };
+    return root1
   }
   // Brak pierwiastków
   else {
@@ -49,9 +46,4 @@ let c = Number(readline.question("Podaj wartosc c: "));
 
 console.log(rootsOfQuadraticEquation(a, b, c));
 
-module.exports = {
-  a,
-  b,
-  c,
-  rootsOfQuadraticEquation
-};
+module.exports = rootsOfQuadraticEquation
